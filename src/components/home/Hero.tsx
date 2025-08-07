@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-gradient.jpg";
+import LetterGlitch from "./LetterGlitch";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -6,12 +6,7 @@ export const Hero = () => {
   return (
     <section className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <img
-          src={heroImg}
-          alt="Abstract gradient hero background for digital products store"
-          className="h-full w-full object-cover"
-          loading="eager"
-        />
+        <LetterGlitch glitchColors={["#2b4539", "#61dca3", "#61b3dc"]} glitchSpeed={50} centerVignette={true} outerVignette={false} smooth={true} />
         <div className="absolute inset-0 bg-background/40" />
       </div>
 
